@@ -1,0 +1,52 @@
+{
+  "logistic_regression": {
+    "C": 0.09544355383607604,
+    "l1_ratio": 1.0,
+    "class_weight": "balanced"
+  },
+  "random_forest": {
+    "n_estimators": 200,
+    "max_depth": 9,
+    "min_samples_leaf": 17,
+    "max_features": 0.1667437143489166,
+    "class_weight": null
+  },
+  "xgboost": {
+    "n_estimators": 400,
+    "learning_rate": 0.020372024796741283,
+    "max_depth": 2,
+    "min_child_weight": 12.731355329831949,
+    "subsample": 0.7617219857055397,
+    "colsample_bytree": 0.3230517910616068,
+    "gamma": 0.5806487218886077,
+    "reg_alpha": 0.3405415789265774,
+    "reg_lambda": 0.262537575554196
+  },
+  "lightgbm": {
+    "n_estimators": 800,
+    "learning_rate": 0.009391952548865762,
+    "num_leaves": 11,
+    "max_depth": 2,
+    "min_child_samples": 12,
+    "subsample": 0.7506165453894925,
+    "colsample_bytree": 0.7709726015951613,
+    "reg_alpha": 0.001696995462772201,
+    "reg_lambda": 0.030436116176265446
+  },
+  "catboost": {
+    "iterations": 300,
+    "learning_rate": 0.022599105737321053,
+    "depth": 3,
+    "l2_leaf_reg": 2.665548883785733,
+    "random_strength": 0.6933414342001203,
+    "bagging_temperature": 0.58627320337063
+  },
+  "tabular_net": {
+    "hidden": "128-64",
+    "dropout": 0.3752890114945491,
+    "lr": 0.0015677046152572395,
+    "weight_decay": 0.0002678461775747378,
+    "batch_size": 256,
+    "emb_scale": 0.5118220794621443
+  }
+}

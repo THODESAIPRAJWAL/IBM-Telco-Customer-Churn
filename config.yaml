@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------
+# Telco Customer Churn - project configuration
+# Every tunable assumption lives here so experiments are reproducible and the
+# business case can be re-run with different numbers without touching code.
+# ---------------------------------------------------------------------------
+
+data:
+  url: https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv
+  raw_file: data/raw/Telco-Customer-Churn.csv
+  processed_file: data/processed/telco_clean.parquet
+
+split:
+  test_size: 0.20
+  random_state: 42
+  cv_folds: 5
+
+tuning:
+  # Optuna trials per model family (use `python run_pipeline.py --fast` for a smoke run)
+  n_trials:
+    logistic_regression: 40
+    random_forest: 40
+    xgboost: 80
+    lightgbm: 80
+    catboost: 40
+    tabular_net: 30
+  fast_n_trials: 4
+  parallel_trials: 6
+  timeout_per_model_sec: 900
+
+business:
+  # Retention-campaign economics used for threshold optimisation and ROI.
+  # Value at risk of a churner = MonthlyCharges x clv_horizon_months x gross_margin
+  clv_horizon_months: 24
+  gross_margin: 0.60
+  # Cost of contacting a customer and giving them a retention incentive
+  contact_cost: 10.0
+  incentive_cost: 60.0
+  # Share of true churners who are "saved" when targeted
+  offer_success_rate: 0.35
+
+explain:
+  # Permutation SHAP cost = sample x max_evals x background model rows
+  shap_sample_size: 300
+  shap_background_size: 40
+  shap_max_evals: 200

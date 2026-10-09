@@ -1,0 +1,7 @@
+model,trials,best_cv_auc,tuning_seconds
+Logistic Regression,40,0.8507,52
+Random Forest,40,0.8478,361
+XGBoost,80,0.8507,307
+LightGBM,80,0.85,71
+CatBoost,40,0.8503,91
+TabularNet (DL),30,0.8473,545

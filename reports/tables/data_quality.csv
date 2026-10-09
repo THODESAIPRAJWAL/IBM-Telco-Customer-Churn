@@ -1,0 +1,22 @@
+column,dtype,missing,blank_strings,unique,example
+customerID,str,0,0,7043,7590-VHVEG
+gender,str,0,0,2,Female
+SeniorCitizen,int64,0,0,2,0
+Partner,str,0,0,2,Yes
+Dependents,str,0,0,2,No
+tenure,int64,0,0,73,1
+PhoneService,str,0,0,2,No
+MultipleLines,str,0,0,3,No phone service
+InternetService,str,0,0,3,DSL
+OnlineSecurity,str,0,0,3,No
+OnlineBackup,str,0,0,3,Yes
+DeviceProtection,str,0,0,3,No
+TechSupport,str,0,0,3,No
+StreamingTV,str,0,0,3,No
+StreamingMovies,str,0,0,3,No
+Contract,str,0,0,3,Month-to-month
+PaperlessBilling,str,0,0,2,Yes
+PaymentMethod,str,0,0,4,Electronic check
+MonthlyCharges,float64,0,0,1585,29.85
+TotalCharges,str,0,11,6531,29.85
+Churn,str,0,0,2,No

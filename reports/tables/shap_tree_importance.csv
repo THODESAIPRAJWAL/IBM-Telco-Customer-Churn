@@ -1,0 +1,64 @@
+feature,mean_abs_shap
+contract_months,0.35134053
+tenure,0.24921404
+monthly_per_service,0.23460509
+Contract = Month-to-month,0.2075148
+log_tenure,0.12935242
+OnlineSecurity = No,0.12698628
+MultipleLines = No,0.10592482
+fiber_no_support,0.10473947
+Contract = Two year,0.10146511
+is_fiber,0.095552035
+num_streaming,0.08888483
+MonthlyCharges,0.083128765
+electronic_check,0.07948219
+PaymentMethod = Electronic check,0.07315213
+PaperlessBilling = No,0.07239627
+TotalCharges,0.071767084
+TechSupport = No,0.06508875
+InternetService = Fiber optic,0.05882601
+PaperlessBilling = Yes,0.0548108
+new_customer,0.053284813
+avg_monthly_charge,0.047443513
+StreamingMovies = Yes,0.042573683
+tenure = bucket_0-6m,0.040794775
+StreamingTV = Yes,0.036124256
+Dependents = No,0.02959447
+OnlineBackup = No,0.026315574
+charge_delta,0.02288614
+SeniorCitizen,0.021757733
+tenure = bucket_49-72m,0.019339822
+MultipleLines = Yes,0.014937513
+Dependents = Yes,0.013257147
+InternetService = No,0.007189313
+auto_payment,0.0070164683
+PhoneService = Yes,0.006235509
+Contract = One year,0.006182092
+StreamingTV = No,0.0046204207
+StreamingMovies = No,0.0042844177
+PhoneService = No,0.003943537
+has_internet,0.00392373
+OnlineBackup = Yes,0.0036753577
+MultipleLines = No phone service,0.0033148737
+num_protection,0.0031910436
+DeviceProtection = No internet service,0.0030185578
+InternetService = DSL,0.002347705
+num_services,0.0017912626
+DeviceProtection = Yes,0.0017344746
+PaymentMethod = Credit card (automatic),0.0016869503
+tenure = bucket_25-48m,0.0015221848
+tenure = bucket_7-12m,0.0013217984
+PaymentMethod = Mailed check,0.0011460875
+TechSupport = Yes,0.00083682756
+Partner = Yes,0.00055636454
+Partner = No,0.0
+has_family,0.0
+OnlineSecurity = No internet service,0.0
+StreamingTV = No internet service,0.0
+TechSupport = No internet service,0.0
+OnlineBackup = No internet service,0.0
+DeviceProtection = No,0.0
+OnlineSecurity = Yes,0.0
+StreamingMovies = No internet service,0.0
+PaymentMethod = Bank transfer (automatic),0.0
+tenure = bucket_13-24m,0.0

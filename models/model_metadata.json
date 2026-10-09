@@ -1,0 +1,135 @@
+{
+  "model_name": "Stacked Ensemble",
+  "model_key": "stacked_ensemble",
+  "trained_at": "2026-10-01T03:57:42+00:00",
+  "data_sha256_16": "16320c9c1ec72448",
+  "n_train": 5634,
+  "n_test": 1409,
+  "features": [
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "category_levels": {
+    "Partner": [
+      "No",
+      "Yes"
+    ],
+    "Dependents": [
+      "No",
+      "Yes"
+    ],
+    "PhoneService": [
+      "No",
+      "Yes"
+    ],
+    "MultipleLines": [
+      "No",
+      "Yes",
+      "No phone service"
+    ],
+    "InternetService": [
+      "DSL",
+      "Fiber optic",
+      "No"
+    ],
+    "OnlineSecurity": [
+      "No",
+      "Yes",
+      "No internet service"
+    ],
+    "OnlineBackup": [
+      "No",
+      "Yes",
+      "No internet service"
+    ],
+    "DeviceProtection": [
+      "No",
+      "Yes",
+      "No internet service"
+    ],
+    "TechSupport": [
+      "No",
+      "Yes",
+      "No internet service"
+    ],
+    "StreamingTV": [
+      "No",
+      "Yes",
+      "No internet service"
+    ],
+    "StreamingMovies": [
+      "No",
+      "Yes",
+      "No internet service"
+    ],
+    "Contract": [
+      "Month-to-month",
+      "One year",
+      "Two year"
+    ],
+    "PaperlessBilling": [
+      "No",
+      "Yes"
+    ],
+    "PaymentMethod": [
+      "Electronic check",
+      "Mailed check",
+      "Bank transfer (automatic)",
+      "Credit card (automatic)"
+    ]
+  },
+  "threshold": 0.2,
+  "f1_threshold": 0.35654073208355735,
+  "business_params": {
+    "clv_horizon_months": 24,
+    "gross_margin": 0.6,
+    "contact_cost": 10.0,
+    "incentive_cost": 60.0,
+    "offer_success_rate": 0.35
+  },
+  "cv_auc_mean": 0.8510805601803995,
+  "cv_auc_std": 0.011121846126339626,
+  "test_metrics": {
+    "roc_auc": 0.8492417783977886,
+    "auc_ci_low": 0.8262448655351469,
+    "auc_ci_high": 0.8705260727479397,
+    "pr_auc": 0.6662915284919638,
+    "brier": 0.1342100000375666,
+    "log_loss": 0.41072806844486404,
+    "precision": 0.47597597597597596,
+    "recall": 0.8475935828877005,
+    "f1": 0.6096153846153847,
+    "specificity": 0.6628019323671498,
+    "mcc": 0.4514205277960142,
+    "lift_top10": 2.832214510562445
+  },
+  "latency_ms_single": 108.3348649997788,
+  "versions": {
+    "python": "3.13.15",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "torch": "2.14.1+cpu",
+    "shap": "0.52.0",
+    "optuna": "5.0.0",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3"
+  }
+}

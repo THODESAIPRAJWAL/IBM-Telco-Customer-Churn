@@ -1,0 +1,5 @@
+segment,customers,actual_churn_rate,mean_predicted_risk,avg_monthly_charges,avg_tenure,expected_margin_loss,share_of_expected_loss,playbook
+Priority save,2196,0.5159380692167578,0.5200728205593601,89.30111566484517,24.29143897996357,1454464.394880088,0.7221027473600213,Proactive outreach by a retention specialist; contract upgrade with loyalty pricing
+Low-cost save,1161,0.41946597760551246,0.416722170628392,45.93432385874247,7.614987080103359,334705.67015964893,0.16617243077936306,"Automated digital offer (auto-pay credit, free add-on trial); no costly incentives"
+Protect & grow,1328,0.07906626506024096,0.07962696423353374,92.66314006024096,58.48418674698795,144651.8999024513,0.07181580704078937,Loyalty perks and upsell of protection bundles; avoid unnecessary discounts
+Maintain,2358,0.061068702290076333,0.0595824077337568,35.46435538592027,37.37828668363019,80385.01626312008,0.03990901481982622,Business as usual; monitor for risk changes

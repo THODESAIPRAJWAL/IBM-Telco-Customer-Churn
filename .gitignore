@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+catboost_info/
+# large / regenerable artefacts (keep the small deployed model + metadata)
+models/all_models.joblib
+data/processed/
